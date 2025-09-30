@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Primeira Página</title>
+    <!-- Carrega o framework Tailwind CSS para estilização rápida e responsiva -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Define a fonte padrão para o projeto */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f9fb; /* Fundo cinza claro */
+        }
+    </style>
+</head>
+<body class="min-h-screen flex items-center justify-center p-4">
+    <!-- Container principal, centralizado na tela -->
+    <div class="w-full max-w-lg bg-white p-8 md:p-10 rounded-xl shadow-2xl transition-all duration-300 hover:shadow-xl border border-gray-100">
+
+        <!-- Título principal -->
+        <h1 class="text-3xl font-extrabold text-indigo-700 mb-4 text-center">
+            👋 Olá Mundo!
+        </h1>
+
+        <!-- Subtítulo / Mensagem de boas-vindas -->
+        <p class="text-gray-600 mb-6 text-center">
+            Esta é a estrutura básica da sua página web.
+        </p>
+
+        <!-- Card de Conteúdo -->
+        <div class="bg-indigo-50 p-6 rounded-lg border border-indigo-200">
+            <h2 class="text-xl font-semibold text-indigo-800 mb-3">
+                O que você vê aqui:
+            </h2>
+            <ul class="space-y-2 text-gray-700">
+                <!-- Itens da lista, usando ícones simples para destaque -->
+                <li class="flex items-start">
+                    <span class="text-indigo-500 mr-2 text-lg">★</span>
+                    <strong>Estrutura HTML5:</strong> Tags essenciais como &lt;head&gt; e &lt;body&gt;.
+                </li>
+                <li class="flex items-start">
+                    <span class="text-indigo-500 mr-2 text-lg">★</span>
+                    <strong>Responsividade:</strong> Adapta-se automaticamente a qualquer tamanho de tela.
+                </li>
+                <li class="flex items-start">
+                    <span class="text-indigo-500 mr-2 text-lg">★</span>
+                    <strong>Estilo Moderno:</strong> Estilizado com classes do Tailwind CSS (como `shadow-2xl` e `rounded-xl`).
+                </li>
+            </ul>
+        </div>
+
+        <!-- Botão de Ação -->
+        <div class="mt-8 text-center">
+            <button class="px-6 py-3 bg-indigo-600 text-white font-bold rounded-full shadow-lg hover:bg-indigo-700 transform transition duration-150 hover:scale-105 focus:outline-none focus:ring-4 focus:ring-indigo-300">
+                Clique para Começar
+            </button>
+        </div>
+    </div>
+</body>
+</html>
